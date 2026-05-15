@@ -14,9 +14,10 @@ class BusinessesDTO
         public string $email,
         public string $phone,
         public string $address,
-        public string $logo_path,
+        //puede ser nulo, entonces
+        public ?string $logo_path,
         public int $is_active,
-        public array $config
+        public ?array $config
     ) {
     }
 
